@@ -18,15 +18,16 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += vndservicemanager
 
 PRODUCT_PACKAGES +=  \
-                    android.hardware.usb@1.0-impl \
-                    android.hardware.usb@1.0-service \
+                    android.hardware.usb-service.example \
                     camera.device@1.0-impl \
                     android.hardware.camera.provider@2.4-impl \
                     android.hardware.graphics.mapper@4.0-impl.minigbm_intel \
                     android.hardware.graphics.allocator-service.minigbm \
                     android.hardware.renderscript@1.0-impl \
-                    android.hardware.graphics.composer@2.4-service \
                     android.hardware.graphics.composer3-service.intel \
+                    android.hardware.identity \
+                    android.hardware.identity-service.example \
+                    android.hardware.media.omx@1.0-service
 
 
 PRODUCT_PROPERTY_OVERRIDES += ro.control_privapp_permissions=enforce
@@ -40,7 +41,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.device_admin.xml:vendor/etc/permissions/android.software.device_admin.xml \
-    frameworks/native/data/etc/android.software.managed_users.xml:vendor/etc/permissions/android.software.managed_users.xml \
     frameworks/native/data/etc/android.software.secure_lock_screen.xml:vendor/etc/permissions/android.software.secure_lock_screen.xml
 
 PRODUCT_COPY_FILES += $(LOCAL_PATH)/file_share.sh:$(TARGET_COPY_OUT_VENDOR)/bin/file_share.sh
