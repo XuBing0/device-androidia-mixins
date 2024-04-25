@@ -23,9 +23,6 @@ PRODUCT_FULL_TREBLE_OVERRIDE := true
 PRODUCT_FULL_TREBLE_OVERRIDE := false
 {{/treble}}
 
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.zygote=zygote64_32
-PRODUCT_COPY_FILES += system/core/rootdir/init.zygote64_32.rc:root/init.zygote64_32.rc
-
 BOARD_USE_64BIT_USERSPACE := true
 
 TARGET_GFX_INTEL := intel
@@ -49,7 +46,7 @@ _board_config_mk := $(shell find $(dir $(current_product_makefile)) -maxdepth 2 
 TARGET_DEVICE := $(shell basename $(TARGET_DEVICE_DIR))
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 PRODUCT_NAME := {{target}}
