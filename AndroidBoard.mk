@@ -27,4 +27,4 @@ em-host-utilities:
 	cp device/intel/civ/host/backend/thermal/vm_thermal_utility/thermsys $(PRODUCT_OUT)/scripts/
 
 .PHONY: host-pkg
-host-pkg: em-host-utilities vinput-manager
+host-pkg: em-host-utilities vinput-manager bootimage_debug

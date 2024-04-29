@@ -26,6 +26,7 @@ BOARD_FLASHFILES += $(PRODUCT_OUT)/scripts/intel-thermal-conf.xml
 BOARD_FLASHFILES += $(PRODUCT_OUT)/scripts/thermald.service
 BOARD_FLASHFILES += $(PRODUCT_OUT)/scripts/rpmb_dev
 BOARD_FLASHFILES += $(PRODUCT_OUT)/scripts/vm-manager.deb
+BOARD_FLASHFILES += $(PRODUCT_OUT)/boot-debug.img
 
 # for USB OTG WA
 BOARD_SEPOLICY_DIRS += $(INTEL_PATH_SEPOLICY)/bxt_usb
