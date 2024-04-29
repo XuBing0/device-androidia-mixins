@@ -67,3 +67,6 @@ PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
 {{#ota-update}}
 PRODUCT_SHIPPING_API_LEVEL := 27
 {{/ota-update}}
+
+# enable debug boot image for GSI testing
+PRODUCT_BUILD_DEBUG_BOOT_IMAGE := true
