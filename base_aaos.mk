@@ -74,3 +74,8 @@ PRODUCT_SHIPPING_API_LEVEL := 27
 
 # enable debug boot image for GSI testing
 PRODUCT_BUILD_DEBUG_BOOT_IMAGE := true
+# Set system properties identifying the chipset
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.soc.manufacturer=intc
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.soc.model=rpl-a
