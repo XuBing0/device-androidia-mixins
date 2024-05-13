@@ -57,9 +57,10 @@
         <version>1</version>
         <fqname>IThermal/default</fqname>
     </hal>
-    <hal format="aidl">
+    <hal format="hidl">
         <name>android.hardware.gatekeeper</name>
-        <version>1</version>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
         <interface>
             <name>IGatekeeper</name>
             <instance>default</instance>
