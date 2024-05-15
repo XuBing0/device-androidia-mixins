@@ -40,11 +40,6 @@
        </interface>
     </hal>
     <hal format="aidl">
-        <name>android.hardware.drm</name>
-        <version>1</version>
-        <fqname>ICryptoFactory/clearkey</fqname>
-    </hal>
-    <hal format="aidl">
         <name>android.hardware.camera.provider</name>
         <fqname>ICameraProvider/external/0</fqname>
     </hal>
