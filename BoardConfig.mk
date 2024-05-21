@@ -51,3 +51,17 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 # fastbootd over USB support
 TARGET_RECOVERY_UI_LIB := librecovery_ui_default
+
+# Enable pstore
+ifneq ($(TARGET_BUILD_VARIANT),user)
+BOARD_KERNEL_CMDLINE += \
+        memmap=4M\$$0x100000000
+BOARD_KERNEL_CMDLINE += \
+        ramoops.mem_address=0x100000000
+BOARD_KERNEL_CMDLINE += \
+        ramoops.mem_size=0x400000
+BOARD_KERNEL_CMDLINE += \
+        ramoops.console_size=0x200000
+BOARD_KERNEL_CMDLINE += \
+        ramoops.dump_oops=1
+endif
