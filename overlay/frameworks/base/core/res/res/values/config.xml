@@ -197,4 +197,8 @@
         <item>bugreport</item>
         <item>users</item>
     </string-array>
+
+    <!-- Handle volume keys directly in Window Manager without passing them to the foreground app -->
+    <bool name="config_handleVolumeKeysInWindowManager">true</bool>
+
 </resources>
