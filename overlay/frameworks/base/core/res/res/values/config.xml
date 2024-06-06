@@ -201,4 +201,6 @@
     <!-- Handle volume keys directly in Window Manager without passing them to the foreground app -->
     <bool name="config_handleVolumeKeysInWindowManager">true</bool>
 
+    <string name="config_systemUiIntelligence" translatable="false">com.android.shell</string>
+
 </resources>
